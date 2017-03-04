@@ -1,0 +1,258 @@
+
+/* Normalize */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+ul {
+	list-style: none
+}
+table {
+	border-spacing: 0;
+	border-collapse: separate;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ""
+}
+blockquote, q {
+	quotes: "" ""
+}
+a img {
+	border: none
+}
+strong {
+	font-weight: 700
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: #f1f4f9;
+	color: #414a51;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif, Helvetica, Arial;
+	line-height: 1.2;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fff;
+}
+
+html {
+	color: #151616;
+	font-size: 16px;
+	-webkit-transition: font-size .3s ease;
+	-moz-transition: font-size .3s ease;
+	-o-transition: font-size .3s ease;
+	transition: font-size .3s ease
+}
+/**************************************************/
+/* Header */
+/**************************************************/
+header{
+	width: 100%;
+	height: 120px;
+	position: relative;
+	float: left;
+}
+header figure{
+	background-image: url(../img/logo.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    margin-top: 11px;
+}
+header a.menu{
+	background-image: url(../img/menu.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 84px;
+    width: 68px;
+    margin-top: -90px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+
+/**************************************************/
+/* News */
+/**************************************************/
+.article{
+	position: relative;
+    float: left;
+    width: 100%;
+    max-width: 980px;
+    height: 36vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+.uno{
+
+    background-image: url(../img/european-parliament.jpg);
+}
+.dos{
+	
+    background-image: url(../img/torres.jpg);
+}
+.tres{
+	
+    background-image: url(../img/aud_aed43dec.jpg);
+}
+.edit{
+	background-image: url(../img/pen-edition.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 6rem;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    opacity: .7;
+}
+.content-title{
+	position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0,0,0, .6);
+    padding: 1.2rem;
+    color: #fff;
+}
+.content-title h2{
+	font-size: 2.8rem;
+	text-transform: uppercase;
+    font-weight: 600;
+    width: calc(100% - 25px);
+}
+.content-title h3{
+	font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: calc(100% - 25px);
+}
+.content-title h3 span{
+	font-weight: 200;
+}
+.section{
+	height: .8rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+.navarra{
+   background-color: #d80000;
+}
+.deportes{
+   background-color: #309e00;
+}
+.internacional{
+   background-color: #004485;
+}
+
+
+/**************************************************/
+/* news page */
+/**************************************************/
+.play{
+	background-image: url(../img/play.png);
+	background-size: 12rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 99999;
+    position: absolute;
+    opacity: .8;
+}
+.options-edition{
+	height: 9rem;
+	width: 100%;
+	max-width: 980px;
+	background-color: #b2b2b2;
+	position: relative;
+    float: left;
+    margin-top: -1.4rem;
+}
+.button-beefea{
+	position: relative;
+	float: left;
+	height: auto;
+	width: 50%;
+}
+.button-beefea a{
+	padding: 15px 70px;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    color: #000;
+    border-radius: 15px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 4.2rem;
+    font-weight: 500;
+    margin: 1rem;
+    -webkit-box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.4);
+box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.4);
+}
+.icons{
+	position: relative;
+	float: right;
+	height: auto;
+	width: 50%;
+	border-left: 1px solid #fff;
+	margin-top: 1.5rem;
+}
+.icons ul{
+	display: inline;
+	float: right;
+}
+.icons li{
+	display: inline;
+}
+.icons li img {
+    height: 5rem;
+    margin-right: 1.5rem;
+   }
+   .article-news{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 1.5rem;
+   }
+   .article-news h1{
+   	margin-bottom: 2rem;
+   }
+
+.article-news{
+    font-size: 2rem;
+    overflow-y: scroll;
+    height: 540px;
+
+}
+
+.article-news  >p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#deleteElement{
+    padding-left: 0px !important;
+}

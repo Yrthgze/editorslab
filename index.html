@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link href="assets/css/style_programming.css" rel="stylesheet">
+    <script async type="text/javascript" src="assets/js/nouislider.min.js"></script>
+    <link async href="assets/css/nouislider.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style_real.css">
+</head>
+<body>
+    <div style="height: 40px;background: white;width: 100%;background-position: center;background-image: url(assets/img/logo.png);background-repeat: no-repeat;background-size: 48px;">
+    </div>
+    <div style="position:absolute;top:0;height: 40px;width: 100%;background-position: left;background-image: url(assets/img/menu.png);background-repeat: no-repeat;background-size: 25px;left:10px;">
+    </div>
+    <video id="video" autoplay controls preload autobuffer webkit-playsinline="true" playsinline="true" width="320px" height="568px" style="background-color: black;">
+        <source src="assets/video/finalvideo.mp4" type="video/mp4">
+        <source src="assets/video/finalvideo.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="menu" style="">
+        <div class="button-beefea" style="width: 50%;">
+            <a style="width: 80%;font-size: 18px;margin:0;padding: 1px 8px;border-radius: 6px;" href="#">Beefea<img width="45px" src="assets/img/deal.png"></a>
+        </div>
+
+        <div style="padding:1px 10px;">
+
+            <div act="Noticia" style="width: 12%;float:right;margin-right: 15px;" id="showTheNew"><a ><img id="showthetext" width="20px" src="assets/icons/show-text.png"><img id="showthevideo" style="display: none;" width="20px" src="assets/icons/camera-video.png"></a></div>
+
+            <div style="width: 12%;float:right;" id="addText"><a class="" href="#modal1"><img width="25px" src="assets/icons/edit-text.png"></a></div>
+            <div style="width: 12%;float:right;" id="addSticker"><a class="" href="#modal2"><img width="20px" src="assets/icons/add-emoji.png"></a></div>
+            <div style="width: 12%;float:right;" id="addImage"><img width="25px" src="assets/icons/camera.png"></div>
+            <div style="border-left: 1px solid rgba(255,255,255,0.4);box-shadow:0px 0px 1px rgba(0,0,0,0.1);float: right;width: 1px;height: 22px;line-height: 1.2;    -webkit-font-smoothing: antialiased;margin-right: 10px;"></div>
+        </div>
+        
+    </div>
+<input style="display: none" type="file" id="image_id" name="image" accept="image/*" />
+    <div class="theRealNew">
+        <div class="article-news">
+            <h4>Eurodiputado de la extrema derecha: "Las mujeres deben cobrar menos"</h4><br>
+            <p>El eurodiputado de la extrema derecha polaca, Janusz Korwin-Mikke, intervino en el Parlamento Europeo con un discurso machista en el que aseguraba que las mujeres deben cobrar menos. "Son más frágiles, más pequeñas y menos inteligentes, y por estas razones deben cobrar menos". </p><br>
+
+            <p>"¿Sabe usted qué papel ocupaban las mujeres en las Olimpiadas griegas? La primera mujer, ya se lo digo yo, ocupó el puesto 800. ¿Sabe usted cuántas mujeres hay entre los primeros cien jugadores de ajedrez? Se lo diré: ninguna", prosiguió el político extremista. Este comentario provocó la indignación de toda la cámara europea, con la respuesta de la eurodiputada socialista Iratxe García. </p> <br><br>
+        </div><
+    </div>
+
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Añade texto</h4><br>
+            <div class="input-field col s12">
+                <textarea id="theNewText" class="materialize-textarea"></textarea>
+                <label for="theNewText">Textarea</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="newText" class=" modal-action modal-close waves-effect waves-green btn-flat">Añadir texto</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal bottom-sheet" >
+        <div class="modal-content">
+            <h4>Añade un sticker</h4><br>
+            <div class="input-field col s12" style="overflow-y: scroll;height: 200px;">
+                <div class="row" style="overflow-y: scroll;">
+                    <div class="col s4"><img class="sticker" src="assets/img/LOL.gif" width="100%" height="100%"></div>
+                    <div class="col s4"><img class="sticker" src="assets/img/heart.png" width="100%" height="100%"></div>
+                    <div class="col s4"><img class="sticker" src="assets/img/feminist.png" width="100%" height="100%"></div>
+                    <div class="col s4"><img class="sticker" src="assets/img/monocle.png" width="100%" height="100%"></div>
+                    <div class="col s4"><img class="sticker" src="assets/img/wtf.png" width="100%" height="100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="newSticker" class=" modal-action modal-close waves-effect waves-green btn-flat">Añadir</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content">
+            
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+          
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
